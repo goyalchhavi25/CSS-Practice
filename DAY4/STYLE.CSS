@@ -1,0 +1,38 @@
+.container{
+    background-color:antiquewhite;
+    display:flex;
+    height:400px;
+    flex-direction:ROW;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
+.box{
+    height:100px;
+    width:100px;
+    
+}
+.first{
+    background-color:orange;
+    /* 
+    abhi tak toh parents par lag rahi the
+    child property */
+    flex-grow:1;
+    align-self:flex-end;
+}
+.second{
+    background-color:green;
+    flex-grow:2;
+    /* this means that ke left space ka 2 part box 2 ko milega and 1 part box 1 ko milega
+     flex-shrink means sabke comparison m kitne jaldi shrink hoga;
+     flex-basis:300px (main axis k around uske length itne hogi)
+     */ 
+}  
+.third{ 
+    background-color:red;
+}
+.fourth{
+    background-color:chartreuse;
+}
